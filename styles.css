@@ -116,12 +116,22 @@ display: flex;
     color: white;
     /* text-decoration: underline; */
 }
-
+ul li.active{
+    background-color: #c71616;
+    border-left: 10px solid white;
+    color: white;
+    
+}
 .showcase{
     width:100%;
     display: flex;
     flex-flow: wrap;
     justify-content: space-around;
+}
+.Specifications{
+    position: absolute;
+    width: 60%;
+    background-color: aliceblue;
 }
 .showcase.tvs ,.showcase.Headphones{
     display: none;

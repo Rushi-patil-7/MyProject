@@ -1,28 +1,24 @@
-function toggleTab(item) {
 
-            switch ( item) {
-                    case "Mobile":
-                    document.getElementById(item).style.display="inline-flex";
-                    // document.getElementById("tabph").style.color="white ";
-                    // document.getElementById("tabph").style.borderLeft="10px solid white "
+function toggleTab(evt, itemName) {
+    // debugger
+     // Declare all variables
+    var i, showcase, tablinks;
+    // Get all elements with class="showcase" and hide them
+    showcase = document.getElementsByClassName("showcase");
+    for (i = 0; i < showcase.length; i++) {
+      showcase[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
 
-                    document.getElementById("tvs").style.display="none";
-                    document.getElementById("Headphones").style.display="none";
-
-                    
-                    break;
-                    case  "tvs":
-                        document.getElementById("Mobile").style.display="none";
-                        document.getElementById(item).style.display="inline-flex";
-                    document.getElementById("Headphones").style.display="none";
-                    break;
-                    case  "Headphones":
-                        document.getElementById("Mobile").style.display="none";
-                        document.getElementById("tvs").style.display="none";
-                        document.getElementById("Headphones").style.display="inline-flex";
-                    break;
-                    default:document.getElementById(item).style.display="inline-flex";
-                    break;
-            }
-        }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(itemName).style.display = "inline-flex";
+    evt.currentTarget.className += " active";
     
+ }
+ 
