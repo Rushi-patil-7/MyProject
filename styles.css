@@ -116,11 +116,15 @@ display: flex;
     color: white;
     /* text-decoration: underline; */
 }
+
 .showcase{
     width:100%;
     display: flex;
     flex-flow: wrap;
     justify-content: space-around;
+}
+.showcase.tvs ,.showcase.Headphones{
+    display: none;
 }
 .box{
     position: relative;
@@ -147,7 +151,7 @@ display: flex;
 .showcase .box :hover{
 cursor: pointer;
 }
-.desc h3, .desc h2{
+.desc h3, .desc h4{
     text-align: center;
     margin: 5px 0px;
 }
@@ -173,11 +177,10 @@ cursor: pointer;
   z-index: 1;
   transition: top .35s ease;
 }
-.box:hover .title {
+/* .box:hover .title {
   top: -50px;
-}
+} */
 .button {
-  position: absolute;
   width: 81px;
   top: 120px;
   text-align: center;
@@ -192,7 +195,11 @@ cursor: pointer;
   border-radius: 50px;
 }
 
-
+.spec{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 .box:hover .button {
   opacity: 1;
 }
@@ -233,7 +240,7 @@ cursor: pointer;
     color: white;
 }
 .section1, .section2, .section3{
-    /* height: 200px; */
+    width: 100%;  
     border-right: 5px solid white;
 }
 .footer .footer-container{

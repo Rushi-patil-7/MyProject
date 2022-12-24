@@ -22,7 +22,7 @@
                 <i class="fa fa-facebook-square" aria-hidden="false"></i>
             <i class="fa-solid fa-magnifying-glass"></i>
 
-                <div class="btn"><a href="/#">Home</a></div>
+                <div class="btn"><a href="#">Home</a></div>
                 <div class="btn"><a href="#">Events</a></div>
                 <div class="btn"><a href="#">Products</a></div>
             </div>
@@ -37,13 +37,13 @@
                     repellat quibusdam quis reiciendis doloribus sint laudantium ratione perspiciatis possimus
                     assumenda, dolores accusamus qui? Iusto, laborum nihil. Aut, maiores animi.</p>
                 <p >Read more...</p><span></span>
-                <button type="button" id="button" onclick="india()">Click me</button>
+                <!-- <button type="button" id="button" onclick="india()">Click me</button> -->
             </div>
             <div class="opt">
                 <div>
                     <img src="./assets/images/10r1.jpg" alt="">
                 </div>
-                <div>
+                <div class="title">
                     <div class="price">₹ 35,000</div>
                     <div class="buy-btn">
                         <p onclick=""><a href="" style="color:white ">Buy Now</a></p>
@@ -52,82 +52,262 @@
             </div>
         </div>
         <div class="contain2">
-            <h2 class="head">Our Products</h2>
+            <h4 class="head">Our Products</h4>
             <div class="products">
                 <div class="prod-name">
                     <ul>
-                        <li>Smart Phones</li>
-                        <li>Laptops</li>
-                        <li>SmartTV</li>
-                        <li>Headphones</li>
-                        <li>Smart Watches</li>
-                        <li>Accesseries </li>
+                        <li id="tabph" onclick="toggleTab('Mobile')">Smart Phones</li>
+                        <li id="tablap">Laptops</li>
+                        <li id="tabtv" onclick="toggleTab('tvs')">SmartTV</li>
+                        <li id="tabhead" onclick="toggleTab('Headphones')">Headphones</li>
+                        <li id="tabwatch" onclick="toggleWatch()">Smart Watches</li>
+                        <li id="tabacc" >Accesseries </li>
                     </ul>
                 </div>
 
-                <div class="showcase">
+                <div class="showcase Mobile" id="Mobile">
                     <div class="box" id="box1">
                         <div class="img">
                             <img src="./assets/images/10r1.jpg" width="100px" height="120px">
                         </div>
                         <div class="desc">
-                            <h2 class="title">OnePlus 10R</h2>
-                            <h3>₹ 38,799</h3>
+                            <h4 class="title">OnePlus 10R</h4>
+                            <h4>₹ 38,799</h4>
                         </div>
-                        <div class="overlay"></div>
-                        <div class="button">Buy Now</div>
-                        <div class="button">Specification</div>
+                        <div class="overlay">
+                            <div class="spec">
+                                <div class="button"> Buy Now </div>
+                                <div class="button">Specification</div>
+                            </div>
+                        </div>
+                        
 
                     </div>
                     <div class="box" id="box1">
                         <div class="img"><img src="./assets/images/10pro-3.png" width="100px" height="120px"></div>
                         <div class="desc">
-                            <h2>Oneplus 10 pro</h2>
-                            <h3>₹ 42,199</h3>
+                            <h4 class="title">Oneplus 10 pro</h4>
+                            <h4>₹ 42,199</h4>
+                        </div>
+                        <div class="overlay">
+                            <div class="spec">
+                                <div class="button">Buy Now</div>
+                                <div class="button">Specification</div>
+                            </div>
                         </div>
                     </div>
                     <div class="box" id="box1">
                         <div class="img"><img src="./assets/images/10T-3.png" width="100px" height="120px"></div>
                         <div class="desc">
-                            <h2>OnePlus 10T</h2>
-                            <h3>₹ 35,999</h3>
+                            <h4 class="title">OnePlus 10T</h4>
+                            <h4>₹ 35,999</h4>
+                        </div>
+                        <div class="overlay">
+                            <div class="spec">
+                                <div class="button">Buy Now</div>
+                                <div class="button">Specification</div>
+                            </div>
                         </div>
                     </div>
                     <div class="box" id="box1">
                         <div class="img"><img src="./assets/images/nordlite.jpg" width="100px" height="120px"></div>
                         <div class="desc">
-                            <h2>OnePlus Nord Lite</h2>
-                            <h3>₹ 25,499</h3>
+                            <h4 class="title">OnePlus Nord Lite</h4>
+                            <h4>₹ 25,499</h4>
                         </div>
+                        <div class="overlay">
+                            <div class="spec">
+                                <div class="button">Buy Now</div>
+                                <div class="button">Specification</div>
+                            </div>
+                        </div> 
                     </div>
                     <div class="box" id="box1">
                         <div class="img"><img src="./assets/images/8-pro.jpg" width="100px" height="120px"></div>
                         <div class="desc">
-                            <h2>Oneplus 8 pro</h2>
-                            <h3>₹ 32,399</h3>
+                            <h4 class="title">Oneplus 8 pro</h4>
+                            <h4>₹ 32,399</h4>
+                        </div>
+                         <div class="overlay">
+                            <div class="spec">
+                                <div class="button">Buy Now</div>
+                                <div class="button">Specification</div>
+                            </div>
                         </div>
                     </div>
                     <div class="box" id="box1">
                         <div class="img"><img src="./assets/images/7T.jpg" width="100px" height="120px"></div>
                         <div class="desc">
-                            <h2>Oneplus 7T</h2>
-                            <h3>₹ 28,499</h3>
+                            <h4 class="title">Oneplus 7T</h4>
+                            <h4>₹ 28,499</h4>
+                        </div>
+                        <div class="overlay">
+                            <div class="spec">
+                                <div class="button">Buy Now</div>
+                                <div class="button">Specification</div>
+                            </div>
                         </div>
                     </div>
                     <div class="box" id="box1">
                         <div class="img"><img src="./assets/images/9-winter.png" width="100px" height="120px"></div>
                         <div class="desc">
-                            <h2>Oneplus 9 Winter Edition</h2>
-                            <h3>₹ 39,899</h3>
+                            <h4 class="title">Oneplus 9 Winter Edition</h4>
+                            <h4>₹ 39,899</h4>
+                        </div>
+                        <div class="overlay">
+                            <div class="spec">
+                                <div class="button">Buy Now</div>
+                                <div class="button">Specification</div>
+                            </div>
                         </div>
                     </div>
                     <div class="box" id="box1">
                         <div class="img"><img src="./assets/images/9-pro.png" width="100px" height="120px"></div>
                         <div class="desc">
-                            <h2>Oneplus 9 pro</h2>
-                            <h3>₹ 32,000</h3>
+                            <h4 class="title">Oneplus 9 pro</h4>
+                            <h4>₹ 32,000</h4>
+                        </div>
+                        <div class="overlay">
+                            <div class="spec">
+                                <div class="button">Buy Now</div>
+                                <div class="button">Specification</div>
+                            </div>
                         </div>
                     </div>
+
+                </div>
+                <div class="showcase tvs" id="tvs">
+                    <div class="box" id="box1">
+                        <div class="img">
+                            <img src="./assets/images/TVs/q1_pro 4k.jpg" width="100px" height="120px">
+                        </div>
+                        <div class="desc">
+                            <h4 class="title">OnePlus Q1-pro 4K tv</h4>
+                            <h4>₹ 38,799</h4>
+                        </div>
+                        <div class="overlay">
+                            <div class="spec">
+                                <div class="button">Buy Now</div>
+                                <div class="button">Specification</div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                    <div class="box" id="box1">
+                        <div class="img"><img src="./assets/images/TVs/yseries_43.jpg" width="100px" height="120px"></div>
+                        <div class="desc">
+                            <h4 class="title">Oneplus Y Series 43"</h4>
+                            <h4>₹ 42,199</h4>
+                        </div>
+                        <div class="overlay">
+                            <div class="spec">
+                                <div class="button">Buy Now</div>
+                                <div class="button">Specification</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" id="box1">
+                        <div class="img"><img src="./assets/images/TVs/oneplus 1.jpeg" width="100px" height="120px"></div>
+                        <div class="desc">
+                            <h4 class="title">OnePlus Z series 53"</h4>
+                            <h4>₹ 35,999</h4>
+                        </div>
+                        <div class="overlay">
+                            <div class="spec">
+                                <div class="button">Buy Now</div>
+                                <div class="button">Specification</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" id="box1">
+                        <div class="img"><img src="./assets/images/TVs/oneplus 2.jfif" width="100px" height="120px"></div>
+                        <div class="desc">
+                            <h4 class="title">Oneplus Model 2 Oled (108cm)</h4>
+                            <h4>₹ 25,499</h4>
+                        </div>
+                        <div class="overlay">
+                            <div class="spec">
+                                <div class="button">Buy Now</div>
+                                <div class="button">Specification</div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="box" id="box1">
+                        <div class="img"><img src="./assets/images/TVs/oneplus 3.jfif" width="100px" height="120px"></div>
+                        <div class="desc">
+                            <h4 class="title">Oneplus 8 pro</h4>
+                            <h4>₹ 32,399</h4>
+                        </div>
+                         <div class="overlay">
+                            <div class="spec">
+                                <div class="button">Buy Now</div>
+                                <div class="button">Specification</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div class="showcase Headphones" id="Headphones">
+                    <div class="box" id="box1">
+                        <div class="img">
+                            <img src="./assets/images/TVs/.jpg" width="100px" height="120px">
+                        </div>
+                        <div class="desc">
+                            <h4 class="title" >OnePlus Bullet wireless z</h4>
+                            <h4>₹ 1,799</h4>
+                        </div>
+                        <div class="overlay">
+                            <div class="spec">
+                                <div class="button">Buy Now</div>
+                                <div class="button">Specification</div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                    <div class="box" id="box1">
+                        <div class="img"><img src="./assets/images/TVs/.jpg" width="100px" height="120px"></div>
+                        <div class="desc">
+                            <h4 class="title">OnePlus Bullet wireless z (Bass Edition)</h4>
+                            <h4>₹ 2,199</h4>
+                        </div>
+                        <div class="overlay">
+                            <div class="spec">
+                                <div class="button">Buy Now</div>
+                                <div class="button">Specification</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" id="box1">
+                        <div class="img"><img src="./assets/images/TVs/ 1.jpeg" width="100px" height="120px"></div>
+                        <div class="desc">
+                            <h4 class="title">OnePlus Ear-Pro Buds</h4>
+                            <h4>₹ 5,999</h4>
+                        </div>
+                        <div class="overlay">
+                            <div class="spec">
+                                <div class="button">Buy Now</div>
+                                <div class="button">Specification</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" id="box1">
+                        <div class="img"><img src="./assets/images/TVs/ 2.jfif" width="100px" height="120px"></div>
+                        <div class="desc">
+                            <h4 class="title">OnePlus wireless Neckband </h4>
+                            <h4>₹ 2,549</h4>
+                        </div>
+                        <div class="overlay">
+                            <div class="spec">
+                                <div class="button">Buy Now</div>
+                                <div class="button">Specification</div>
+                            </div>
+                        </div> 
+                    </div>
+                
+                    
 
                 </div>
             </div>
@@ -181,8 +361,9 @@
                 </div>
             </div>
         </div>
-        <h2>all right reserved @2022 </h2>
+        <h4>all right reserved @2022 </h4>
     </div>
+
 </body>
 
 </html>
