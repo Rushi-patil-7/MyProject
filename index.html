@@ -52,7 +52,7 @@
             </div>
         </div>
         <div class="contain2">
-            <h4 class="head">Our Products</h4>
+            <h2 class="head">Our Products</h2>
             <div class="products">
                 <div class="prod-name">
                     <ul>
@@ -66,7 +66,7 @@
                 </div>
 
                 <div class="showcase Mobile" id="Mobile">
-                    <div class="box" id="box1">
+                    <div class="mobile box" id="mobile1">
                         <div class="img">
                             <img src="./assets/images/10r1.jpg" width="100px" height="120px">
                         </div>
@@ -75,15 +75,15 @@
                             <h4>₹ 38,799</h4>
                         </div>
                         <div class="overlay">
-                            <div class="spec" >
+                            <div class="spec"  >
                                 <div class="button"> Buy Now </div>
-                                <div class="button">Specification</div>
+                                <div class="button" onclick="openSpec( 'mobile1','mobilespec')">Specification</div>
                             </div>
                         </div>
                         
 
                     </div>
-                    <div class="box" id="box2">
+                    <div class="mobile box" id="mobile2">
                         <div class="img"><img src="./assets/images/10pro-3.png" width="100px" height="120px"></div>
                         <div class="desc">
                             <h4 class="title">Oneplus 10 pro</h4>
@@ -92,11 +92,11 @@
                         <div class="overlay">
                             <div class="spec">
                                 <div class="button">Buy Now</div>
-                                <div class="button">Specification</div>
+                                <div class="button" onclick="openSpec( 'mobile2','mobilespec')">Specification</div>
                             </div>
                         </div>
                     </div>
-                    <div class="box" id="box3">
+                    <div class="mobile box" id="mobile3">
                         <div class="img"><img src="./assets/images/10T-3.png" width="100px" height="120px"></div>
                         <div class="desc">
                             <h4 class="title">OnePlus 10T</h4>
@@ -105,11 +105,11 @@
                         <div class="overlay">
                             <div class="spec">
                                 <div class="button">Buy Now</div>
-                                <div class="button">Specification</div>
+                                <div class="button" onclick="openSpec( 'mobile3','mobilespec')">Specification</div>
                             </div>
                         </div>
                     </div>
-                    <div class="box" id="box4">
+                    <div class="mobile box" id="mobile4">
                         <div class="img"><img src="./assets/images/nordlite.jpg" width="100px" height="120px"></div>
                         <div class="desc">
                             <h4 class="title">OnePlus Nord Lite</h4>
@@ -118,11 +118,11 @@
                         <div class="overlay">
                             <div class="spec">
                                 <div class="button">Buy Now</div>
-                                <div class="button">Specification</div>
+                                <div class="button" onclick="openSpec( 'mobile4','mobilespec')">Specification</div>
                             </div>
                         </div> 
                     </div>
-                    <div class="box" id="box5">
+                    <div class="mobile box" id="mobile5">
                         <div class="img"><img src="./assets/images/8-pro.jpg" width="100px" height="120px"></div>
                         <div class="desc">
                             <h4 class="title">Oneplus 8 pro</h4>
@@ -131,11 +131,11 @@
                          <div class="overlay">
                             <div class="spec">
                                 <div class="button">Buy Now</div>
-                                <div class="button">Specification</div>
+                                <div class="button" onclick="openSpec( 'mobile5','mobilespec')">Specification</div>
                             </div>
                         </div>
                     </div>
-                    <div class="box" id="box6">
+                    <div class="mobile box" id="mobile6">
                         <div class="img"><img src="./assets/images/7T.jpg" width="100px" height="120px"></div>
                         <div class="desc">
                             <h4 class="title">Oneplus 7T</h4>
@@ -144,11 +144,11 @@
                         <div class="overlay">
                             <div class="spec">
                                 <div class="button">Buy Now</div>
-                                <div class="button">Specification</div>
+                                <div class="button" onclick="openSpec( 'mobile6','mobilespec')">Specification</div>
                             </div>
                         </div>
                     </div>
-                    <div class="box" id="box7">
+                    <div class="mobile box" id="mobile7">
                         <div class="img"><img src="./assets/images/9-winter.png" width="100px" height="120px"></div>
                         <div class="desc">
                             <h4 class="title">Oneplus 9 Winter Edition</h4>
@@ -157,11 +157,11 @@
                         <div class="overlay">
                             <div class="spec">
                                 <div class="button">Buy Now</div>
-                                <div class="button">Specification</div>
+                                <div class="button" onclick="openSpec( 'mobile7','mobilespec')">Specification</div>
                             </div>
                         </div>
                     </div>
-                    <div class="box" id="box8">
+                    <div class="mobile box" id="mobile8">
                         <div class="img"><img src="./assets/images/9-pro.png" width="100px" height="120px"></div>
                         <div class="desc">
                             <h4 class="title">Oneplus 9 pro</h4>
@@ -170,17 +170,25 @@
                         <div class="overlay">
                             <div class="spec">
                                 <div class="button">Buy Now</div>
-                                <div class="button">Specification</div>
+                                <div class="button" onclick="openSpec( 'mobile8','mobilespec')">Specification</div>
                             </div>
                         </div>
                     </div>
-                    <div class="">
-                        
+                    <div id="mobilespec">
+                        <h2>Model Name : <span></span> </h2>
+                        <h4>RAM : <span></span></h4>
+                        <h4>ROM : <span></span></h4>
+                        <h4>Camera : <span></span></h4>
+                        <h4>Battery : <span></span></h4>
+                        <h4>Charger : <span></span></h4>
+
+
+
                     </div>
                 </div>
 
                 <div class="showcase tvs" id="tvs">
-                    <div class="box" id="box1">
+                    <div class="tv box" id="tv1">
                         <div class="img">
                             <img src="./assets/images/TVs/q1_pro 4k.jpg" width="100px" height="120px">
                         </div>
@@ -191,13 +199,13 @@
                         <div class="overlay">
                             <div class="spec">
                                 <div class="button">Buy Now</div>
-                                <div class="button">Specification</div>
+                                <div class="button"  onclick="openSpec( 'tv1','tvspec')">Specification</div>
                             </div>
                         </div>
                         
 
                     </div>
-                    <div class="box" id="box1">
+                    <div class="tv box" id="tv2">
                         <div class="img"><img src="./assets/images/TVs/yseries_43.jpg" width="100px" height="120px"></div>
                         <div class="desc">
                             <h4 class="title">Oneplus Y Series 43"</h4>
@@ -206,11 +214,11 @@
                         <div class="overlay">
                             <div class="spec">
                                 <div class="button">Buy Now</div>
-                                <div class="button">Specification</div>
+                                <div class="button" onclick="openSpec( 'tv2','tvspec')">Specification</div>
                             </div>
                         </div>
                     </div>
-                    <div class="box" id="box1">
+                    <div class="tv box" id="tv3">
                         <div class="img"><img src="./assets/images/TVs/oneplus 1.jpeg" width="100px" height="120px"></div>
                         <div class="desc">
                             <h4 class="title">OnePlus Z series 53"</h4>
@@ -219,11 +227,11 @@
                         <div class="overlay">
                             <div class="spec">
                                 <div class="button">Buy Now</div>
-                                <div class="button">Specification</div>
+                                <div class="button" onclick="openSpec( 'tv3','tvspec')">Specification</div>
                             </div>
                         </div>
                     </div>
-                    <div class="box" id="box1">
+                    <div class="tv box" id="tv4">
                         <div class="img"><img src="./assets/images/TVs/oneplus 2.jfif" width="100px" height="120px"></div>
                         <div class="desc">
                             <h4 class="title">Oneplus Model 2 Oled (108cm)</h4>
@@ -232,11 +240,11 @@
                         <div class="overlay">
                             <div class="spec">
                                 <div class="button">Buy Now</div>
-                                <div class="button">Specification</div>
+                                <div class="button" onclick="openSpec( 'tv4','tvspec')">Specification</div>
                             </div>
                         </div> 
                     </div>
-                    <div class="box" id="box1">
+                    <div class="tv box" id="tv5">
                         <div class="img"><img src="./assets/images/TVs/oneplus 3.jfif" width="100px" height="120px"></div>
                         <div class="desc">
                             <h4 class="title">Oneplus Qled TV 55"</h4>
@@ -245,12 +253,13 @@
                          <div class="overlay">
                             <div class="spec">
                                 <div class="button">Buy Now</div>
-                                <div class="button">Specification</div>
+                                <div class="button" onclick="openSpec( 'tv5','tvspec')">Specification</div>
                             </div>
                         </div>
                     </div>
-                    
-
+                    <div id="tvspec" onclick="specview('tvspec')">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
                 </div>
                 <div class="showcase Headphones" id="Headphones">
                     <div class="box" id="box1">

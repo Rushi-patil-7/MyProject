@@ -128,9 +128,9 @@ ul li.active{
     flex-flow: wrap;
     justify-content: space-around;
 }
-.Specifications{
-    position: absolute;
-    width: 60%;
+#mobilespec, #tvspec{
+    display: none;
+    width: 70%;
     background-color: aliceblue;
 }
 .showcase.tvs ,.showcase.Headphones{

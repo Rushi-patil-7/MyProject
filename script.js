@@ -23,42 +23,45 @@ function toggleTab(evt, itemName) {
  }
 
  
- function openSpec(boxid){
+ function openSpec(boxid ,specid){
 
-  // document.getElementsByClassName("box")[0].style.order=boxorder+1;
   neworder=document.getElementsByClassName("box")
   for(var i =0 ; i< neworder.length;i++){
     neworder[i].style.order=0;  
   }
+  document.getElementById(boxid).style.order=-2;  
+  document.getElementById(specid).style.display="block";
+  document.getElementById(specid).style.order=-1;
+
+  specview(boxid);
+}
+
+function specview(mobileid) {
+  // mobileord=document.getElementsByClassName("box");
+  // debugger
+  var arr= [mobile= [model="Oneplus 10R", RAM="6GB", ROM="128GB", Camera="64MP", Battery="5000 mah",charger="100 watt"],
+            [model="Oneplus 10 Pro", RAM="8GB", ROM="128GB", Camera="50MP", Battery="6000 mah",charger="64 watt"],
+            [model="Oneplus 10T", RAM="4GB", ROM="64GB", Camera="48MP", Battery="4000 mah",charger="48watt"],
+            [model="Oneplus Nord Lite ", RAM="4GB", ROM="64GB", Camera="48MP", Battery="4000 mah",charger="48watt"],
+            [model="Oneplus 8 pro", RAM="4GB", ROM="64GB", Camera="48MP", Battery="4000 mah",charger="48watt"],
+            [model="Oneplus 7T", RAM="4GB", ROM="64GB", Camera="48MP", Battery="4000 mah",charger="48watt"],
+            [model="Oneplus 9 winter edition", RAM="4GB", ROM="64GB", Camera="48MP", Battery="4000 mah", charger="48watt"],
+            [model="Oneplus 9 pro", RAM="4GB", ROM="64GB", Camera="48MP", Battery="4000 mah",charger="48watt"]
+          ];
+          if(mobileid=='mobile1'){ var x= 0 }
+          if(mobileid=='mobile2'){ var x= 1 }
+          if(mobileid=='mobile3'){ var x= 2 }
+          if(mobileid=='mobile4'){ var x= 3 }
+          if(mobileid=='mobile5'){ var x= 4 }
+          if(mobileid=='mobile6'){ var x= 5 }
+          if(mobileid=='mobile7'){ var x= 6 }
+          if(mobileid=='mobile8'){ var x= 7 }
+               for( var k=0 ; k<=6;k++ ){
+                 document.getElementsByTagName("span")[k].innerText=arr[x][k-1];
+               }
+          
+}
 
 
-  document.getElementById(boxid).style.order=-2;
-  document.getElementById("Specifications").style.order=-1;
-  document.getElementById("Specifications").style.display="block";
-
-  // boxorder= neworder+1;
-  // console.log(neworder)
-  document.getElementById(boxid).style.order=neworder;
-
-
-  // var boxorder2= document.getElementById(boxid).style.order ;
-  // boxorder2[0].style.order=neworder
-  // document.getElementsByClassName("box").style.display="none";
-  // document.getElementById(boxid).style.display="none";
-
-  // var a=document.getElementsByClassName("box")
-  // console.log(a);  
-  // a.style.display="none"
-  // document.getElementById(boxid).style.display="none";
-  // console.log("blcok")
-
-  //   document.getElementById("Specifications").style.order = a-1 ;
-
-
-    }
     
-    
-    // evt.currentTarget.className += " active";
-
-
  
